@@ -2,39 +2,32 @@
     <head>
         <style>  
             body {
-                margin: 0;
+                font-size: 10mm;
             }
-
             .content_link {
                 text-align: center;
-                margin:30% 0; 
+                margin:100px 0; 
             }
             #menu_link {
                 text-align: center;
-                font-size: 40px;
+                font-size: 20mm;
+                color:darkgreen;
                 font-weight: bold;
                 position: fixed;
                 top:0;
                 width: 100%;
                 background-color: white;
-
             }
             #logo {
                 position: absolute;
                 top: 4px;
                 right: 6px;
                 height: 42px;
-                z-index: 99;
-<<<<<<< HEAD
-                 
-=======
-
->>>>>>> remove mentoring, change website text content
+                z-index: 99;       
             }
             #push_content_under_fixed_position_menu_bar {
-                height: 50px;
+                height: 20mm;
             }
-
         </style>
         <script>
             function wrapper(e) {
@@ -91,13 +84,13 @@
         <div id="fixed_menu_bar">           
             <div id="menu_link">Menu</div>  
         </div>
-        <div id="training_content" class="content">
+        <div id="training_content" class="content" style="display:hidden">
             <p>We provide training, in various formats, on information systems, data communications, and software development.</p>
         </div>
-        <div id="projects_content" class="content">
+        <div id="projects_content" class="content" style="display:hidden">
             <p>We can help with your internal projects and initiatives, by providing a subject-matter expert, that can assist your team with the project, in any project stage. </p>
         </div> 
-        <div id="contact_us_content" class="content">
+        <div id="contact_us_content" class="content" style="display:hidden">
             <p>Sales: <strong>sales@nikondi.com</strong></p>
             <p>Technical support: <strong>technical_support@nikondi.com</strong></p>
         </div>

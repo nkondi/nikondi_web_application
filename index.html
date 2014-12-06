@@ -16,7 +16,6 @@
                 position: fixed;
                 top:0;
                 width: 100%;
-                z-index: 99;
                 background-color: white;
 
             }
@@ -24,7 +23,9 @@
                 position: absolute;
                 top: 4px;
                 right: 6px;
-                height: 42px 
+                height: 42px;
+                z-index: 99;
+                 
             }
             #push_content_under_fixed_position_menu_bar {
                 height: 30px;
@@ -79,13 +80,12 @@
         </script>
     </head>
     <body>
+        <img id="logo" src="nikondi_logo.svg" alt=""/>
         <div id="push_content_under_fixed_position_menu_bar"> 
         </div>
-        <div id="fixed_menu_bar">
-            <!--<img id="logo" src="nikondi_logo.svg" alt=""/>-->
+        <div id="fixed_menu_bar">           
             <div id="menu_link">Menu</div>  
         </div>
-
         <div id="training_content" class="content">
             <h3>Audience:</h3>
             <p>Nikondi's technical training service offers a complete technical training solution to organizations. Our service is designed to meet the technical training needs of organizations in most markets. If your organization is running or planning to implemeent an information system developed by a major vendor, it's likely we provide training on the product. If your organization needs training on a vertical line-of-business product, as your training providor, we often can develop, organize, and implement the program. The preserves your organizations resources to focus on core objectives, training is covered.</p>

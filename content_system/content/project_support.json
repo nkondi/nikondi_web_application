@@ -1,0 +1,24 @@
+{
+    "type"  :   "article",
+    "id"    :   "project_support",
+    "data"  :   [
+                    {
+                    "type": "paragraph",
+                    "title": "audience",
+                    "value": "This offering suits our customers that have an internal technical staff, but occasionally need technology specialists to assist in the evolution of their IT landscape."
+                    }
+                ,               
+                    {
+                    "type": "paragraph",
+                    "title": "Support your initiatives",
+                    "value": "Nikondi's project support service provides our customers with talented technical professionals that can assist with customers internal projects and initiatives. As our customer, you give us a list of the requirements and expectations of the professional needed for the project, and we tap into our pool of experts to find a perfect match. After the selection process, the professional can become a part of your team and help spearhead the project to completion."
+                    }
+                ,
+                    {
+                    "type": "paragraph",
+                    "title": "Quality selection",
+                    "value": "Nikondi's project support service provides our customers with talented technical professionals that can assist with customers internal projects and initiatives. As our customer, you give us a list of the requirements and expectations of the professional needed for the project, and we tap into our pool of experts to find a perfect match. After the selection process, the professional can become a part of your team and help spearhead the project to completion."
+                    }                
+                ]
+}
+

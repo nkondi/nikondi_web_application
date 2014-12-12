@@ -1,0 +1,136 @@
+/*
+Copyright (C) 2014 Nikondi
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+*/
+/* 
+    Created on : Oct 8, 2014, 12:59:50 PM
+    Author     : nick
+*/
+
+#navigation_system_top_bar 
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999; /*keeps scrolling content from overlapping*/
+
+    background-color: #eeeeee;     
+    height: 50px; 
+    width: 100%;  /*so fixed postion works*/
+}
+
+/*not targeting id just for demo purposes*/
+img[src="navigation_system/images/menu_bars_gray.svg"] 
+{
+    position: absolute; /*so top, left, right, bottom work*/
+    top: 4px;
+    left: 6px;
+    
+    height:42px; 
+}
+
+/*not targeting id just for demo purposes*/
+img[src="navigation_system/images/nikondi_logo.svg"]
+{
+    position: absolute;
+    top:4px;
+    right: 6px; 
+    
+    height: 42px;
+}
+
+#navigation_system_menu_container
+{
+    position: absolute;
+    top: 50px; 
+    left: -300px;
+    z-index: 999998; /* one less than top menu bar */
+
+    height: 100%;   
+    background-color: gray;
+    width: 300px;
+
+    transition-delay: 0s;
+    transition-duration: 0.4s;
+    transition-property: left;
+    transition-timing-function: linear;
+    
+    
+    
+}
+
+.navigation_system.menu_links
+{ 
+    opacity: 0;
+
+    display: block;
+    height: 50px;
+    width: 300px;
+    padding-top: 15px;
+
+    text-decoration: none;
+    color:darkgreen;
+
+    background-color: lightgray;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+
+    /*    transition to smoothly reveal links*/
+    transition-property: opacity;
+    transition-delay: 0s;
+    transition-duration: 1s;
+}
+
+#navigation_system_background
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+
+    background-color: black;
+    opacity: 0;
+
+    transition-property: opacity;
+    transition-delay: 0s;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+/***Events***/
+#navigation_system_background.visible
+{
+    /*increase z-index above content but below menu
+    to capture events for toggling off*/
+    z-index: 999997;
+    opacity: 0.7; 
+}
+
+#navigation_system_menu_container.selected
+{
+    left: 0px;
+}
+#navigation_system_menu_container.selected .navigation_system.menu_links
+{
+    opacity: 1;
+}
+
+#navigation_system_menu_container.selected .navigation_system.menu_links:active
+{
+    background-color: gray;
+}
+

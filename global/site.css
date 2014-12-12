@@ -1,0 +1,36 @@
+/*
+Copyright (C) 2014 Nikondi LLC
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+*/
+/* 
+    Created on : Oct 6, 2014, 2:06:28 PM
+    Author     : nick
+*/
+
+html,body,p,a,div,section,img {
+   box-sizing: border-box; /*simplified box sizing*/
+   margin: 0;
+}
+
+html,body 
+{ 
+    height: 100%;   /*allows percentages to work*/
+}
+
+body 
+{
+    position: relative; /*provides base for absolute children*/
+}

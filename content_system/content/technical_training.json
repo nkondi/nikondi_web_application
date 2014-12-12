@@ -1,0 +1,43 @@
+{
+    "type": "article",
+    "id": "technical_training",
+    "data":
+            [
+                {
+                    "type": "paragraph",
+                    "title": "audience",
+                    "value": "Nikondi's technical training service offers a complete technical training solution to organizations. Our service is designed to meet the technical training needs of organizations in most markets. If your organization is running or planning to implemeent an information system developed by a major vendor, it's likely we provide training on the product. If your organization needs training on a vertical line-of-business product, as your training providor, we often can develop, organize, and implement the program. The preserves your organizations resources to focus on core objectives, training is covered."
+                }
+                ,
+                {
+                    "type": "paragraph",
+                    "title": "flexible formats",
+                    "value": "Nikondi delivers training services online or on-premise at your location, depending on your needs. Our online instructor-led courses provide an engaging and collaborative online classroom environment to students, while enabling students to take the course from any location with an Internet connection. Our on-premise option brings Nikondi training to your team, at your location, discussing your systems and your initiatives."
+                }
+                ,
+                {
+                    "type": "paragraph",
+                    "title": "great instructors",
+                    "value": "All of our instructors are certified, experienced, and highly skilled in their technical knowledge and teaching skill. We have access to some of the nations top training talent, and we are always actively seeking qualified professionals to join our team to support new and growing technologies. As our customer, we want you to feel confident with your training, so we encourage you to ask us for instructor references and testimonials for the classes you are interested in."
+                }
+                ,
+                {
+                    "type": "paragraph",
+                    "title": "quality content",
+                    "value": "Nikondi's training content comes from proven and quality sources, usually the software or hardware vendor behind the product the class is based on. Student labs are relevant, well-guided, hands-on, and performed on real sandboxed systems. The labs are synchronized and bundled with the courseware to give the students a smooth lecture and lab experience. As our customer, feel free to request a demo of the courseware for classes you are interested in."
+                }
+                ,
+                {
+                    "type": "paragraph",
+                    "title": "flexible and scalable",
+                    "value": "Whether you have one or one hundred students that need to be trained, Nikondi can work with you and deliver a quality training service. Online and on-premise options are available, and we can help you build training programs for your staff using our DETECT Training Framework, and any other methods relevant to your needs."
+                }
+                ,
+                {
+                    "type": "paragraph",
+                    "title": "Training program development",
+                    "value": "Nikondi can develop training programs for your organization using the process below. Click for more details"
+                }
+            ]
+}
+

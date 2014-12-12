@@ -1,0 +1,31 @@
+[
+    {
+        "name"      :   "technical training",        
+        "id"        :   "navigation_system__menu_link_1",
+        "classes"   :   [
+                            "navigation_system",
+                            "menu_links"
+                        ],
+        "url"       :   "http://localhost:8383/nikondi_website_dev/mobile5/content_system/content/technical_training.json" 
+    }
+    ,
+    {
+        "name"      :   "technical mentoring",        
+        "id"        :   "navigation_system__menu_link_2",
+        "classes"   :   [
+                            "navigation_system",
+                            "menu_links"                            
+                        ],        
+         "url"      :   "http://localhost:8383/nikondi_website_dev/mobile5/content_system/content/technical_mentoring.json"         
+    }
+    ,
+    {  
+        "name"      :   "project support",
+        "id"        :   "navigation_system__menu_link_3",
+        "classes"   :   [
+                            "navigation_system",
+                            "menu_links"
+                        ],        
+        "url"       :   "http://localhost:8383/nikondi_website_dev/mobile5/content_system/content/project_support.json"     
+    }
+]

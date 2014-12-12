@@ -1,0 +1,19 @@
+{
+	"type" : "article",
+	"id" : "technical_mentoring",
+	"data" :
+	[
+		{
+			"type": "paragraph",
+			"title": "audience",
+			"value": "Our technical mentoring service provides a training and guidance solution to organizations that don't wish to, or can't afford to remove key technical staff from operations. Nikondi mentors can train your staff to learn a product during operations and support it once training is complete. Mentors can also supplement a technology project by offering guidance and support throughout the project life cycle. Traditional training classes and mentoring services can work synergistically as a complete training and implementation solution."
+		}
+		,
+		{
+			"type": "paragraph",
+			"title": "No technical staff downtime",
+			"value": "Your staff can continue to support operations while concurrently receiving quality training on the implemented technology solution. Our mentoring service is highly valuable to customers that require expertise on-premise during a technology initiative. Our mentoring service supports projects through supplemental hands-on training and guidance that is focused and tailored to the project's goals."
+		}	
+	]
+}
+

@@ -1,0 +1,123 @@
+<html>
+    <head>
+        <style>  
+            body {
+                margin: 0;
+            }
+            
+            .content_link {
+                text-align: center;
+                margin:30% 0; 
+            }
+            #menu_link {
+                text-align: center;
+                font-size: 30px;
+                font-weight: bold;
+                position: fixed;
+                top:0;
+                width: 100%;
+                z-index: 99;
+                background-color: white;
+
+            }
+            #logo {
+                position: absolute;
+                top: 4px;
+                right: 6px;
+                height: 42px 
+            }
+            #push_content_under_fixed_position_menu_bar {
+                height: 30px;
+            }
+            
+        </style>
+        <script>
+            function wrapper(e) {
+                function display_training() {
+                    document.getElementById("menu_link").style.display = "block";
+                    document.getElementById("menu").style.display = "none";
+                    var content_collection = document.querySelectorAll(".content");
+                    for (var i = 0; i < content_collection.length; i++) {
+                        content_collection[i].style.display = "none";
+                    }
+                    document.getElementById("training_content").style.display = "block";
+                }
+                function display_mentoring() {
+                    document.getElementById("menu_link").style.display = "block";
+                    document.getElementById("menu").style.display = "none";
+                    var content_collection = document.querySelectorAll(".content");
+                    for (var i = 0; i < content_collection.length; i++) {
+                        content_collection[i].style.display = "none";
+                    }
+                    document.getElementById("mentoring_content").style.display = "block";
+                }
+                function display_projects() {
+                    document.getElementById("menu_link").style.display = "block";
+                    document.getElementById("menu").style.display = "none";
+                    var content_collection = document.querySelectorAll(".content");
+                    for (var i = 0; i < content_collection.length; i++) {
+                        content_collection[i].style.display = "none";
+                    }
+                    document.getElementById("projects_content").style.display = "block";
+                }
+                function display_menu() {
+                    document.getElementById("menu_link").style.display = "none";
+                    document.getElementById("menu").style.display = "block";
+                    var content_collection = document.querySelectorAll(".content");
+                    for (var i = 0; i < content_collection.length; i++) {
+                        content_collection[i].style.display = "none";
+                    }
+                }
+                document.getElementById("content_link_training").addEventListener("click", display_training);
+                document.getElementById("content_link_mentoring").addEventListener("click", display_mentoring);
+                document.getElementById("content_link_projects").addEventListener("click", display_projects);
+                document.getElementById("menu_link").addEventListener("click", display_menu);
+                display_menu();
+            }
+            window.addEventListener("load", wrapper);
+
+        </script>
+    </head>
+    <body>
+        <div id="push_content_under_fixed_position_menu_bar"> 
+        </div>
+        <div id="fixed_menu_bar">
+            <!--<img id="logo" src="nikondi_logo.svg" alt=""/>-->
+            <div id="menu_link">Menu</div>  
+        </div>
+
+        <div id="training_content" class="content">
+            <h3>Audience:</h3>
+            <p>Nikondi's technical training service offers a complete technical training solution to organizations. Our service is designed to meet the technical training needs of organizations in most markets. If your organization is running or planning to implemeent an information system developed by a major vendor, it's likely we provide training on the product. If your organization needs training on a vertical line-of-business product, as your training providor, we often can develop, organize, and implement the program. The preserves your organizations resources to focus on core objectives, training is covered.</p>
+            <h3>Flexible formats:</h3>                      
+            <p>Nikondi delivers training services online or on-premise at your location, depending on your needs. Our online instructor-led courses provide an engaging and collaborative online classroom environment to students, while enabling students to take the course from any location with an Internet connection. Our on-premise option brings Nikondi training to your team, at your location, discussing your systems and your initiatives.</p>
+            <h3>Great instructors:</h3>
+            <p>All of our instructors are certified, experienced, and highly skilled in their technical knowledge and teaching skill. We have access to some of the nations top training talent, and we are always actively seeking qualified professionals to join our team to support new and growing technologies. As our customer, we want you to feel confident with your training, so we encourage you to ask us for instructor references and testimonials for the classes you are interested in.</p>
+            <h3>Quality content:</h3>
+            <p>Nikondi's training content comes from proven and quality sources, usually the software or hardware vendor behind the product the class is based on. Student labs are relevant, well-guided, hands-on, and performed on real sandboxed systems. The labs are synchronized and bundled with the courseware to give the students a smooth lecture and lab experience. As our customer, feel free to request a demo of the courseware for classes you are interested in.</p>
+            <h3>Flexible and scalable:</h3>
+            <p>Whether you have one or one hundred students that need to be trained, Nikondi can work with you and deliver a quality training service. Online and on-premise options are available, and we can help you build training programs for your staff using our DETECT Training Framework, and any other methods relevant to your needs.</p>
+            <h3>Training program development:</h3>
+            <p>Nikondi can develop training programs for your organization using the process below. Click for more details</p>
+        </div>
+        <div id="mentoring_content" class="content">
+            <h3>Audience:</h3>
+            <p>Our technical mentoring service provides a training and guidance solution to organizations that don't wish to, or can't afford to remove key technical staff from operations. Nikondi mentors can train your staff to learn a product during operations and support it once training is complete. Mentors can also supplement a technology project by offering guidance and support throughout the project life cycle. Traditional training classes and mentoring services can work synergistically as a complete training and implementation solution.</p>
+            <h3>No downtime:</h3>
+            <p>Your staff can continue to support operations while concurrently receiving quality training on the implemented technology solution. Our mentoring service is highly valuable to customers that require expertise on-premise during a technology initiative. Our mentoring service supports projects through supplemental hands-on training and guidance that is focused and tailored to the project's goals.</p>
+        </div>
+        <div id="projects_content" class="content">
+            <h3>Audience:</h3>
+            <p>This offering suits our customers that have an internal technical staff, but occasionally need technology specialists to assist in the evolution of their IT landscape.</p>
+            <h3>Support your initiatives:</h3>
+            <p>Nikondi's project support service provides our customers with talented technical professionals that can assist with customers internal projects and initiatives. As our customer, you give us a list of the requirements and expectations of the professional needed for the project, and we tap into our pool of experts to find a perfect match. After the selection process, the professional can become a part of your team and help spearhead the project to completion.</p>
+            <h3>Quality selection:</h3>
+            <p>Nikondi's project support service provides our customers with talented technical professionals that can assist with customers internal projects and initiatives. As our customer, you give us a list of the requirements and expectations of the professional needed for the project, and we tap into our pool of experts to find a perfect match. After the selection process, the professional can become a part of your team and help spearhead the project to completion.</p>
+        </div>       
+        <div id="menu">
+            <h2 id="content_link_training" class="content_link">Training</h2>
+            <h2 id="content_link_mentoring" class="content_link">Mentoring</h2>
+            <h2 id="content_link_projects" class="content_link">Projects</h2>
+        </div>
+    </body>
+</html>

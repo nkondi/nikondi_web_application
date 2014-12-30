@@ -3,14 +3,15 @@
         <meta name=viewport content="width=device-width, initial-scale=1">
         <title>nikondi</title>
         <style>             
-            .button {
+            .control {
                 font-size: 12mm;
-                font-weight: bold;                
-                margin: 12mm 0mm;
+                font-weight: bold;
+                margin: 15mm 0mm;
                 cursor: pointer;                
             }
             p {
                 font-size: 5mm;
+                font-weight: normal;
             }
         </style>
         <script>
@@ -30,25 +31,28 @@
                     document.getElementById("projects_description").style.display = "none";
                     document.getElementById("contact_us_info").style.display = "block";
                 }
-                document.getElementById("button_show_training_info").onclick = display_training;
-                document.getElementById("button_show_projects_info").onclick = display_projects;
-                document.getElementById("button_show_contact_us").onclick = display_contact_us;
+                document.getElementById("expand_training_info").onclick = display_training;
+                document.getElementById("expand_projects_info").onclick = display_projects;
+                document.getElementById("expand_contact_us").onclick = display_contact_us;
             }
             window.addEventListener("load", new_scope);
         </script>
     </head>
-    <body>          
-            <div id="button_show_training_info" class="button">Training</div>
+    <body>        
+        <div id="expand_training_info" class="control">Training
             <p id="training_description" style="display:none">
                 We provide training, in various formats, on information systems, data communications, and software development.
-            </p>   
-            <div id="button_show_projects_info" class="button">Projects</div>
+            </p>
+        </div>   
+        <div id="expand_projects_info" class="control">Projects
             <p id="projects_description" style="display:none">
                 We can help with your internal projects and initiatives, by providing a subject-matter expert that can assist your team with the project, in any project stage.
-            </p> 
-            <div id="button_show_contact_us" class="button">Contact us</div>
+            </p>        
+        </div>
+        <div id="expand_contact_us" class="control">Contact us
             <p id="contact_us_info" style="display:none">
                 Please email any questions to: <strong>info@nikondi.com</strong>
-            </p>  
+            </p>
+        </div>
     </body>
 </html>

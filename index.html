@@ -1,127 +1,52 @@
 <html>
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>nikondi</title>
         <style>  
-            body {
+            .button {
+                font-size: 15mm;
+            }
+            p {
                 font-size: 8mm;
-            }
-            .content_link {
-                text-align: center;
-                display: block;
-                font-size: 15mm;
-                color: black;
-                text-decoration: none;
-                font-weight: bold;
-                margin:15mm 0; 
-            }
-            #menu_link {
-                text-align: center;
-                font-size: 15mm;
-                color:darkgreen;
-                font-weight: bold;
-                position: fixed;
-                top:0;
-                width: 100%;
-                background-color: white;
-            }
-            #logo {
-                position: absolute;
-                top: 4px;
-                right: 6px;
-                height: 42px;
-                z-index: 99;       
-            }
-            #push_content {
-                height: 15mm;
             }
         </style>
         <script>
-            function wrapper(e) {
+            function new_scope() {
                 function display_training() {
-                    document.getElementById("menu_link").style.display = "block";
-                    document.getElementById("push_content").style.display = "block";
-                    document.getElementById("menu").style.display = "none";
-                    var content_collection = document.querySelectorAll(".content");
-                    for (var i = 0; i < content_collection.length; i++) {
-                        content_collection[i].style.display = "none";
-                    }
-                    document.getElementById("training_content").style.display = "block";
+                    document.getElementById("projects_description").style.display = "none";
+                    document.getElementById("contact_us_info").style.display = "none";
+                    document.getElementById("training_description").style.display = "block";
                 }
                 function display_projects() {
-                    document.getElementById("menu_link").style.display = "block";
-                    document.getElementById("push_content").style.display = "block";
-                    document.getElementById("menu").style.display = "none";
-                    var content_collection = document.querySelectorAll(".content");
-                    for (var i = 0; i < content_collection.length; i++) {
-                        content_collection[i].style.display = "none";
-                    }
-                    document.getElementById("projects_content").style.display = "block";
+                    document.getElementById("training_description").style.display = "none";
+                    document.getElementById("contact_us_info").style.display = "none";
+                    document.getElementById("projects_description").style.display = "block";
                 }
                 function display_contact_us() {
-                    document.getElementById("menu_link").style.display = "block";
-                    document.getElementById("push_content").style.display = "block";
-                    document.getElementById("menu").style.display = "none";
-                    var content_collection = document.querySelectorAll(".content");
-                    for (var i = 0; i < content_collection.length; i++) {
-                        content_collection[i].style.display = "none";
-                    }
-                    document.getElementById("contact_us_content").style.display = "block";
+                    document.getElementById("training_description").style.display = "none";
+                    document.getElementById("projects_description").style.display = "none";
+                    document.getElementById("contact_us_info").style.display = "block";
                 }
-
-                function display_menu() {
-                    document.getElementById("menu_link").style.display = "none";
-                    document.getElementById("menu").style.display = "block";
-                    document.getElementById("push_content").style.display = "none";
-                    var content_collection = document.querySelectorAll(".content");
-                    for (var i = 0; i < content_collection.length; i++) {
-                        content_collection[i].style.display = "none";
-                    }
-                }
-                function navigate_back_and_forward(e) {
-                    var hash = /#.+$/.exec(e.newURL);
-                    if (hash === null) {
-                        display_menu();
-                    }
-                    ;
-                    if (hash) {
-                        switch (hash[0]) {
-                            case "#training_content":
-                                display_training();
-                                break;
-                            case "#projects_content":
-                                display_projects();
-                                break;
-                            case "#contact_us_content":
-                                display_contact_us();
-                                break;
-                        }
-                    }
-                }
-                display_menu();
-                window.addEventListener("hashchange", navigate_back_and_forward);
+                document.getElementById("button_show_training_info").onclick = display_training;
+                document.getElementById("button_show_projects_info").onclick = display_projects;
+                document.getElementById("button_show_contact_us").onclick = display_contact_us;
             }
-            window.addEventListener("load", wrapper);
+            window.addEventListener("load", new_scope);
         </script>
     </head>
-    <body>
-        <!--<img id="logo" src="nikondi_logo.svg" alt=""/>-->
-        <div id="push_content" style="display:none"> 
-        </div>           
-        <a id="menu_link" style="display: none" href="">Menu</a>  
-        <div id="training_content" class="content" style="display:none">
-            <p>We provide training, in various formats, on information systems, data communications, and software development.</p>
-        </div>
-        <div id="projects_content" class="content" style="display:none">
-            <p>We can help with your internal projects and initiatives, by providing a subject-matter expert, that can assist your team with the project, in any project stage. </p>
-        </div> 
-        <div id="contact_us_content" class="content" style="display:none">
-            <p>Sales: <strong>sales@nikondi.com</strong></p>
-            <p>Technical support: <strong>technical_support@nikondi.com</strong></p>
-        </div>
+    <body>          
         <div id="menu">
-            <a id="content_link_training" class="content_link" href="#training_content">Training</a>
-            <a id="content_link_projects" class="content_link" href="#projects_content">Projects</a>
-            <a id="content_link_contact_us" class="content_link" href="#contact_us_content">Contact us</a>
+            <h1 id="button_show_training_info" class="button">Training</h1>
+            <p id="training_description" style="display:none">
+                We provide training, in various formats, on information systems, data communications, and software development.
+            </p>   
+            <h1 id="button_show_projects_info" class="button">Projects</h1>
+            <p id="projects_description" style="display:none">
+                We can help with your internal projects and initiatives, by providing a subject-matter expert that can assist your team with the project, in any project stage.
+            </p> 
+            <h1 id="button_show_contact_us" class="button">Contact us</h1>
+            <p id="contact_us_info" style="display:none">
+                Please email any questions to: <strong>info@nikondi.com</strong>
+            </p>  
         </div>
     </body>
 </html>

@@ -17,40 +17,43 @@
         </style>
         <script>
             function new_scope() {
+                var training = document.getElementById("training_info"); 
+                var projects = document.getElementById("projects_info");
+                var contact_us = document.getElementById("contact_us_info");
                 function display_training() {
-                    document.getElementById("projects_description").style.display = "none";
-                    document.getElementById("contact_us_info").style.display = "none";
-                    document.getElementById("training_description").style.display = "block";
+                    projects.style.display = "none";
+                    contact_us.style.display = "none";
+                    training.style.display = "block";
                 }
                 function display_projects() {
-                    document.getElementById("training_description").style.display = "none";
-                    document.getElementById("contact_us_info").style.display = "none";
-                    document.getElementById("projects_description").style.display = "block";
+                    training.style.display = "none";
+                    contact_us.style.display = "none";
+                    projects.style.display = "block";
                 }
                 function display_contact_us() {
-                    document.getElementById("training_description").style.display = "none";
-                    document.getElementById("projects_description").style.display = "none";
-                    document.getElementById("contact_us_info").style.display = "block";
-                }
+                    training.style.display = "none";
+                    projects.style.display = "none";
+                    contact_us.style.display = "block";
+                }                       
                 document.getElementById("expand_training_info").onclick = display_training;
                 document.getElementById("expand_projects_info").onclick = display_projects;
-                document.getElementById("expand_contact_us").onclick = display_contact_us;
+                document.getElementById("expand_contact_us_info").onclick = display_contact_us;
             }
             window.addEventListener("load", new_scope);
         </script>
     </head>
     <body>        
         <div id="expand_training_info" class="control">Training
-            <p id="training_description" style="display:none">
+            <p id="training_info" style="display:none">
                 We provide training, in various formats, on information systems, data communications, and software development.
             </p>
         </div>   
         <div id="expand_projects_info" class="control">Projects
-            <p id="projects_description" style="display:none">
+            <p id="projects_info" style="display:none">
                 We can help with your internal projects and initiatives, by providing a subject-matter expert that can assist your team with the project, in any project stage.
             </p>        
         </div>
-        <div id="expand_contact_us" class="control">Contact us
+        <div id="expand_contact_us_info" class="control">Contact us
             <p id="contact_us_info" style="display:none">
                 Please email any questions to: <strong>info@nikondi.com</strong>
             </p>

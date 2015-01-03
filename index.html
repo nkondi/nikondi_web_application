@@ -16,44 +16,21 @@
             }
         </style>
         <script>
-            function new_scope() {
-                var training = document.getElementById("training_info"); 
-                var projects = document.getElementById("projects_info");
-                var contact_us = document.getElementById("contact_us_info");
-                function display_training() {
-                    projects.style.display = "none";
-                    contact_us.style.display = "none";
-                    training.style.display = "block";
-                }
-                function display_projects() {
-                    training.style.display = "none";
-                    contact_us.style.display = "none";
-                    projects.style.display = "block";
-                }
-                function display_contact_us() {
-                    training.style.display = "none";
-                    projects.style.display = "none";
-                    contact_us.style.display = "block";
-                }                       
-                document.getElementById("expand_training_info").onclick = display_training;
-                document.getElementById("expand_projects_info").onclick = display_projects;
-                document.getElementById("expand_contact_us_info").onclick = display_contact_us;
-            }
-            window.addEventListener("load", new_scope);
+            function display_content(e) e.target.firstElementChild.style.display = e.target.firstElementChild.style.display=="none"? "block" : "none";
         </script>
     </head>
     <body>        
-        <div id="expand_training_info" class="control">Training
+        <div id="expand_training_info" class="control" onclick="display_content(event)">Training
             <p id="training_info" style="display:none">
                 We provide training, in various formats, on information systems, data communications, and software development.
             </p>
         </div>   
-        <div id="expand_projects_info" class="control">Projects
+        <div id="expand_projects_info" class="control" onclick="display_content(event)">Projects
             <p id="projects_info" style="display:none">
                 We can help with your internal projects and initiatives, by providing a subject-matter expert that can assist your team with the project, in any project stage.
             </p>        
         </div>
-        <div id="expand_contact_us_info" class="control">Contact us
+        <div id="expand_contact_us_info" class="control" onclick="display_content(event)">Contact us
             <p id="contact_us_info" style="display:none">
                 Please email any questions to: <strong>info@nikondi.com</strong>
             </p>

@@ -1,39 +1,52 @@
 <html>
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
         <link rel="icon" type="image/png" href="favicon.png"/>
         <title>nikondi</title>
-        <style>             
+        <style>
             .control {
+                display:block;
+                background-color: #e3f2e9;
+                color: #00260f;
+                text-align: center;
+                text-decoration: none;
                 font-size: 12mm;
                 font-weight: bold;
-                margin: 5mm 0 11mm 0;
-                cursor: pointer;                
+                margin: 5mm 0 11mm 0;               
             }
             p {
+                color: black;
                 font-size: 5mm;
                 font-weight: normal;
             }
+            img {
+                display: block;
+                margin: 0 auto;
+            }
         </style>
         <script>
-            function display_content(e) e.target.firstElementChild.style.display = e.target.firstElementChild.style.display=="none"? "block" : "none";
+            function display_content(e) {
+                e.target.firstElementChild.style.display = e.target.firstElementChild.style.display == "none" ? "block" : "none";
+            }
         </script>
     </head>
-    <body>        
-        <div id="expand_training_info" class="control" onclick="display_content(event)">Training
+    <body>    
+        <img src="nikondi_logo.png" alt=""/>
+        <a id="expand_training_info" class="control" href="#expand_training_info" onclick="display_content(event)">Training
             <p id="training_info" style="display:none">
                 We provide training, in various formats, on information systems, data communications, and software development.
             </p>
-        </div>   
-        <div id="expand_projects_info" class="control" onclick="display_content(event)">Projects
+        </a>   
+        <a id="expand_projects_info" class="control" href="#expand_projects_info" onclick="display_content(event)">Projects
             <p id="projects_info" style="display:none">
                 We can help with your internal projects and initiatives, by providing a subject-matter expert that can assist your team with the project, in any project stage.
             </p>        
-        </div>
-        <div id="expand_contact_us_info" class="control" onclick="display_content(event)">Contact us
-            <p id="contact_us_info" style="display:none">
+        </a>
+        <a id="expand_contact_us_info" class="control" href="#expand_contact_us_info" onclick="display_content(event)">Contact us
+            <p id="contact_us_info" style="display:none" onclick="event.stopPropagation()">
                 Please email any questions to: <strong>info@nikondi.com</strong>
             </p>
-        </div>
+        </a>
+
     </body>
 </html>
